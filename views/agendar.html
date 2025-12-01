@@ -1,18 +1,18 @@
 <div ng-controller="AgendarController" class="agendar-container">
     <div class="container">
-        <h1>Agendar Cita</h1>
-        <div class="form-card">
+        <h1 class="animate__animated animate__fadeInDown">Agendar Cita</h1>
+        <div class="form-card animate__animated animate__slideInUp">
             
             <!-- Formulario usando ng-model -->
             <div class="form-grid">
-                <div class="form-group">
+                <div class="form-group animate__animated animate__fadeInLeft" style="animation-delay: 0.1s;">
                     <label>Nombre Completo *</label>
                     <input type="text" 
                            ng-model="formData.nombre"
                            placeholder="Juan Pérez"
                            required>
                 </div>
-                <div class="form-group">
+                <div class="form-group animate__animated animate__fadeInRight" style="animation-delay: 0.1s;">
                     <label>Email *</label>
                     <input type="email" 
                            ng-model="formData.email"
@@ -22,14 +22,14 @@
             </div>
 
             <div class="form-grid">
-                <div class="form-group">
+                <div class="form-group animate__animated animate__fadeInLeft" style="animation-delay: 0.2s;">
                     <label>Teléfono *</label>
                     <input type="tel" 
                            ng-model="formData.telefono"
                            placeholder="5512345678"
                            required>
                 </div>
-                <div class="form-group">
+                <div class="form-group animate__animated animate__fadeInRight" style="animation-delay: 0.2s;">
                     <label>Servicio *</label>
                     <!-- Select usando ng-options -->
                     <select ng-model="formData.servicio"
@@ -41,13 +41,13 @@
             </div>
 
             <div class="form-grid">
-                <div class="form-group">
+                <div class="form-group animate__animated animate__fadeInLeft" style="animation-delay: 0.3s;">
                     <label>Fecha *</label>
                     <input type="date" 
                            ng-model="formData.fecha"
                            required>
                 </div>
-                <div class="form-group">
+                <div class="form-group animate__animated animate__fadeInRight" style="animation-delay: 0.3s;">
                     <label>Hora *</label>
                     <input type="time" 
                            ng-model="formData.hora"
@@ -55,21 +55,22 @@
                 </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
                 <label>Mensaje adicional</label>
                 <textarea ng-model="formData.mensaje"
                           rows="4"
                           placeholder="Describa brevemente el motivo de su consulta..."></textarea>
             </div>
 
-            <button class="btn-submit" 
+            <button class="btn-submit animate__animated animate__slideInUp" 
+                    style="animation-delay: 0.5s;"
                     ng-click="agendarCita()"
                     ng-disabled="!isFormValid()">
                 Agendar Cita
             </button>
 
             <!-- Mensaje de confirmación -->
-            <div ng-show="mensajeConfirmacion" class="mensaje-exito">
+            <div ng-show="mensajeConfirmacion" class="mensaje-exito animate__animated animate__bounceIn">
                 {{mensajeConfirmacion}}
             </div>
         </div>

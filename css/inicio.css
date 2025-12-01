@@ -5,8 +5,12 @@
 .banner {
     background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
     color: white;
-    padding: 5rem 1.5rem;
+    padding: 8rem 1.5rem;
     text-align: center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner-content h1 {
@@ -171,7 +175,27 @@
     color: #6b7280;
 }
 
+@media (max-width: 1024px) {
+    .banner {
+        padding: 6rem 1.5rem;
+        min-height: 70vh;
+    }
+    
+    .banner-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .banner-content p {
+        font-size: 1.25rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .banner {
+        padding: 4rem 1.5rem;
+        min-height: 60vh;
+    }
+    
     .banner-content h1 {
         font-size: 2rem;
     }
@@ -180,11 +204,34 @@
         font-size: 1.125rem;
     }
     
-    .servicios-grid {
-        grid-template-columns: 1fr;
+    .btn-primary {
+        padding: 0.65rem 1.5rem;
+        font-size: 0.95rem;
     }
     
     .table-container {
         overflow-x: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        padding: 2.5rem 1rem;
+        min-height: 50vh;
+    }
+    
+    .banner-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .banner-content p {
+        font-size: 1rem;
+    }
+    
+    .btn-primary {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
     }
 }

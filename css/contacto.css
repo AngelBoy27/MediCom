@@ -144,9 +144,10 @@
 }
 
 .socials {
-    margin-top: 1.25rem;
+    margin-top: 1.5rem;
     display: flex;
-    gap: 0.5rem;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
 /* Contenedor de la columna derecha: tarjeta de info + mapa */
@@ -157,20 +158,35 @@
 
 .social {
     display: inline-block;
-    padding: 0.5rem 0.9rem;
-    background: #f3f4f6;
+    padding: 0.75rem 1.25rem;
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
     border-radius: 8px;
-    color: #374151;
+    color: white;
     text-decoration: none;
     font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
 }
 
-.social:hover { background: #eef2ff; }
+.social:hover { 
+    background: linear-gradient(135deg, #1e40af 0%, #1a3a8a 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
-    .contacto-grid { grid-template-columns: 1fr; }
-    .map-container { min-height: 300px; }
+    .contacto-container h1 {
+        font-size: 2rem;
+    }
+    
+    .contacto-grid { 
+        grid-template-columns: 1fr; 
+    }
+    
+    .map-container { 
+        min-height: 300px; 
+    }
 }
 
 .map-note {
@@ -182,7 +198,91 @@
 }
 
 @media (max-width: 768px) {
+    .contacto-container {
+        padding: 3rem 1.5rem;
+    }
+    
+    .contacto-container h1 {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+    
     .contacto-grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-form-wrapper {
+        margin-bottom: 1rem;
+    }
+    
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 0.65rem;
+        font-size: 0.95rem;
+    }
+    
+    .btn-enviar {
+        padding: 0.85rem 1.5rem;
+        font-size: 0.95rem;
+    }
+    
+    .contact-info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-card {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contacto-container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .contacto-container h1 {
+        font-size: 1.5rem;
+    }
+    
+    .form-group label {
+        font-size: 0.9rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+    
+    .btn-enviar {
+        padding: 0.75rem 1.2rem;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    
+    .info-card {
+        padding: 1.25rem 1rem;
+    }
+    
+    .info-card h4 {
+        font-size: 1rem;
+    }
+    
+    .info-card p {
+        font-size: 0.9rem;
+    }
+    
+    .contact-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .social {
+        padding: 0.45rem 0.8rem;
+        font-size: 0.85rem;
     }
 }

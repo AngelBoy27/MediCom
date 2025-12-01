@@ -46,7 +46,7 @@
     object-fit: cover;
 }
 
-/* Galería de Imágenes - Mosaico Masónico */
+/* Galerï¿½a de Imï¿½genes - Mosaico Masï¿½nico */
 .gallery-section {
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -119,7 +119,7 @@
     opacity: 1;
 }
 
-/* Estadísticas */
+/* Estadï¿½sticas */
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -154,7 +154,7 @@
     font-size: 1rem;
 }
 
-/* Sección de Misión */
+/* Secciï¿½n de Misiï¿½n */
 .mission-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -196,6 +196,10 @@
 
 /* Responsividad */
 @media (max-width: 1024px) {
+    .nosotros-container h1 {
+        font-size: 2.25rem;
+    }
+    
     .gallery-grid.masonry {
         grid-template-columns: repeat(3, 1fr);
         auto-rows: 180px;
@@ -207,13 +211,24 @@
 }
 
 @media (max-width: 768px) {
+    .nosotros-container {
+        padding: 3rem 1.5rem;
+    }
+    
+    .nosotros-container h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
     .content-grid,
     .mission-section {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
 
     .gallery-grid.masonry {
@@ -231,32 +246,63 @@
     .image-placeholder {
         height: 220px;
     }
-
-    .nosotros-container h1 {
-        font-size: 2rem;
+    
+    .stat-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    .stat-card p {
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
+    .nosotros-container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .nosotros-container h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
     .gallery-grid.masonry {
         grid-template-columns: 1fr;
         auto-rows: 120px;
+        gap: 0.75rem;
     }
 
     .stats-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
 
     .mission-section {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
-
-    .nosotros-container {
-        padding: 2rem 1rem;
+    
+    .stat-card {
+        padding: 1.5rem 1rem;
     }
-
-    .nosotros-container h1 {
-        font-size: 1.5rem;
-        margin-bottom: 2rem;
+    
+    .stat-card h3 {
+        font-size: 1.25rem;
+    }
+    
+    .stat-card p {
+        font-size: 0.9rem;
+    }
+    
+    .mission-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .mission-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .mission-card p {
+        font-size: 0.9rem;
     }
 }

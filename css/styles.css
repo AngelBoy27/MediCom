@@ -11,6 +11,10 @@ body {
     background-color: #f9fafb;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     color: #1f2937;
@@ -45,4 +49,64 @@ input, select, textarea {
     margin-top: 1rem;
     text-align: center;
     font-weight: 600;
+}
+
+/* Animaciones por hover */
+button:hover {
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    transition: all 0.3s ease;
+}
+
+.servicio-card,
+.blog-card,
+.info-card,
+.stat-card,
+.especialidad-card,
+.servicio-principal-card {
+    transition: all 0.3s ease;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    h1 {
+        font-size: 1.75rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+    
+    body {
+        font-size: 0.95rem;
+    }
 }

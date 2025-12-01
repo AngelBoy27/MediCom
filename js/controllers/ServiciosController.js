@@ -1,6 +1,9 @@
 app.controller('ServiciosController', function($scope, DataService) {
     console.log('ServiciosController cargado');
     
+    // Inicializar el término de búsqueda vacío
+    $scope.searchTerm = '';
+    
     // Servicios principales con descripción extendida
     $scope.serviciosPrincipales = [
         {
@@ -29,22 +32,22 @@ app.controller('ServiciosController', function($scope, DataService) {
         }
     ];
 
-    // Cargar especialidades desde el servicio HTTP
-    DataService.getServicios().then(function(data) {
+    // Cargar especialidades desde especialidades.json usando DataService
+    DataService.getEspecialidades().then(function(data) {
         $scope.especialidades = data;
-        console.log('Servicios cargados desde JSON:', data);
+        console.log('Especialidades cargadas desde JSON:', data);
     }).catch(function(error) {
-        console.error('Error al cargar servicios, usando datos de respaldo:', error);
-        // Datos de respaldo
+        console.error('Error al cargar especialidades, usando datos de respaldo:', error);
+        // Datos de respaldo si falla la carga del JSON
         $scope.especialidades = [
-            { nombre: 'Neurología', horario: 'Lun-Vie 9:00-18:00', precio: 800 },
-            { nombre: 'Traumatología y Ortopedia', horario: 'Lun-Sáb 8:00-20:00', precio: 750 },
-            { nombre: 'Cardiología', horario: 'Lun-Vie 10:00-19:00', precio: 900 },
-            { nombre: 'Pediatría', horario: 'Lun-Sáb 8:00-18:00', precio: 650 },
-            { nombre: 'Nutrición', horario: 'Lun-Vie 9:00-17:00', precio: 550 },
-            { nombre: 'Cirugía Maxilofacial', horario: 'Mar-Jue 10:00-16:00', precio: 1200 },
-            { nombre: 'Cirugía Plástica', horario: 'Lun-Vie 11:00-17:00', precio: 1500 },
-            { nombre: 'Psiquiatría', horario: 'Lun-Vie 9:00-19:00', precio: 850 }
+            { id: 1, servicio: 'Neurología', disponibilidad: 'Lun-Vie 9:00-18:00', precio: 800 },
+            { id: 2, servicio: 'Traumatología y Ortopedia', disponibilidad: 'Lun-Sáb 8:00-20:00', precio: 750 },
+            { id: 3, servicio: 'Cardiología', disponibilidad: 'Lun-Vie 10:00-19:00', precio: 900 },
+            { id: 4, servicio: 'Pediatría', disponibilidad: 'Lun-Sáb 8:00-18:00', precio: 650 },
+            { id: 5, servicio: 'Nutrición', disponibilidad: 'Lun-Vie 9:00-17:00', precio: 550 },
+            { id: 6, servicio: 'Cirugía Maxilofacial', disponibilidad: 'Mar-Jue 10:00-16:00', precio: 1200 },
+            { id: 7, servicio: 'Cirugía Plástica', disponibilidad: 'Lun-Vie 11:00-17:00', precio: 1500 },
+            { id: 8, servicio: 'Psiquiatría', disponibilidad: 'Lun-Vie 9:00-19:00', precio: 850 }
         ];
     });
 });

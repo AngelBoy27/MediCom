@@ -96,8 +96,73 @@
     color: #2563eb;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .servicios-container h1 {
+        font-size: 2rem;
+    }
+    
     .servicios-principales-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicios-container {
+        padding: 2.5rem 1.5rem;
+    }
+    
+    .servicios-container h1 {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
+    
+    .servicios-container h2 {
+        font-size: 1.5rem;
+        margin: 2.5rem 0 1.5rem;
+    }
+    
+    .servicios-principales-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .especialidades-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .servicios-container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .servicios-container h1 {
+        font-size: 1.5rem;
+    }
+    
+    .servicios-container h2 {
+        font-size: 1.25rem;
+    }
+    
+    .servicio-principal-card {
+        padding: 1.5rem;
+    }
+    
+    .servicio-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .servicio-icon-large {
+        font-size: 2.5rem;
+        min-width: auto;
+    }
+    
+    .servicio-principal-card h3 {
+        font-size: 1.25rem;
+    }
+    
+    .especialidades-grid {
         grid-template-columns: 1fr;
     }
 }

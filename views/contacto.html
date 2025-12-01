@@ -4,43 +4,43 @@
 
         <div class="contacto-grid">
             <!-- Formulario de contacto -->
-            <div class="contact-form info-card animate__animated animate__fadeInLeft">
-                <h2>Envíanos un mensaje</h2>
+            <div class="contact-form info-card animate__animated animate__slideInLeft">
+                <h2 class="animate__animated animate__fadeInDown" style="animation-delay: 0.2s;">Envíanos un mensaje</h2>
 
                 <form name="contactForm" novalidate ng-submit="enviarContacto()">
-                    <div class="form-row">
+                    <div class="form-row animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
                         <input type="text" name="nombre" ng-model="formContacto.nombre" placeholder="Nombre completo" required />
                     </div>
 
-                    <div class="form-row">
+                    <div class="form-row animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
                         <input type="email" name="email" ng-model="formContacto.email" placeholder="Correo electrónico" required />
                     </div>
 
-                    <div class="form-row">
+                    <div class="form-row animate__animated animate__fadeInUp" style="animation-delay: 0.5s;">
                         <input type="tel" name="telefono" ng-model="formContacto.telefono" placeholder="Teléfono (opcional)" />
                     </div>
 
-                    <div class="form-row">
+                    <div class="form-row animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
                         <textarea name="mensaje" ng-model="formContacto.mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
                     </div>
 
-                    <div class="form-actions">
+                    <div class="form-actions animate__animated animate__slideInUp" style="animation-delay: 0.7s;">
                         <button type="submit" class="btn-primary">Enviar mensaje</button>
                         <span class="form-note">Te responderemos a la brevedad.</span>
                     </div>
                 </form>
 
-                <div class="alert success" ng-show="contactSuccess">
+                <div class="alert success animate__animated animate__bounceIn" ng-show="contactSuccess">
                     Mensaje enviado correctamente. Gracias por contactarnos.
                 </div>
             </div>
 
             <!-- Información y mapa -->
             <div class="contact-info">
-                <div class="info-card animate__animated animate__fadeInRight">
-                    <h2>Información</h2>
+                <div class="info-card animate__animated animate__slideInRight">
+                    <h2 class="animate__animated animate__fadeInDown" style="animation-delay: 0.2s;">Información</h2>
 
-                    <div class="info-section">
+                    <div class="info-section animate__animated animate__fadeInUp" style="animation-delay: 0.3s;">
                         <div class="info-icon">📍</div>
                         <div class="info-content">
                             <div class="info-title">Dirección</div>
@@ -48,7 +48,7 @@
                         </div>
                     </div>
 
-                    <div class="info-section">
+                    <div class="info-section animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
                         <div class="info-icon">📞</div>
                         <div class="info-content">
                             <div class="info-title">Teléfonos</div>
@@ -56,7 +56,7 @@
                         </div>
                     </div>
 
-                    <div class="info-section">
+                    <div class="info-section animate__animated animate__fadeInUp" style="animation-delay: 0.5s;">
                         <div class="info-icon">✉️</div>
                         <div class="info-content">
                             <div class="info-title">Correo</div>
@@ -64,7 +64,7 @@
                         </div>
                     </div>
 
-                    <div class="info-section">
+                    <div class="info-section animate__animated animate__fadeInUp" style="animation-delay: 0.6s;">
                         <div class="info-icon">⏰</div>
                         <div class="info-content">
                             <div class="info-title">Horarios</div>
@@ -72,10 +72,12 @@
                         </div>
                     </div>
 
-                    <div class="socials">
-                        <a href="#" class="social">Facebook</a>
-                        <a href="#" class="social">Twitter</a>
-                        <a href="#" class="social">Instagram</a>
+                    <div class="socials animate__animated animate__zoomIn" style="animation-delay: 0.7s;">
+                        <a href="#" class="social">🔗 @medicom_oficial</a>
+                        <a href="#" class="social">📘 MediCom Centro</a>
+                        <a href="#" class="social">🐦 @MediCom_Health</a>
+                        <a href="#" class="social">📷 medicom.salud</a>
+                        <a href="#" class="social">💼 linkedin.com/company/medicom</a>
                     </div>
                 </div>
 

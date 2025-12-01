@@ -1,19 +1,20 @@
 .servicios-container {
-    padding: 4rem 1.5rem;
-    min-height: 70vh;
+    /* Padding mínimo para acercar al máximo el contenido */
+    padding: 1rem 1.5rem 3rem 1.5rem;
+    min-height: auto;
 }
 
 .servicios-container h1 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
     color: #1f2937;
 }
 
 .servicios-container h2 {
     text-align: center;
     font-size: 2rem;
-    margin: 4rem 0 2rem;
+    margin: 0.75rem 0 1.5rem;
     color: #1f2937;
 }
 
@@ -22,6 +23,9 @@
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
+    justify-items: center;
+    width: 100%;
+    place-content: center;
 }
 
 .servicio-principal-card {
@@ -31,6 +35,8 @@
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     border: 1px solid #e5e7eb;
     transition: all 0.3s;
+    width: 100%;
+    max-width: 400px;
 }
 
 .servicio-principal-card:hover {

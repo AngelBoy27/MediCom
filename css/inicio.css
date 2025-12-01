@@ -3,7 +3,11 @@
 }
 
 .banner {
-    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    /* Fondo con imagen del hospital y overlay para legibilidad */
+    background-image: linear-gradient(rgba(37,99,235,0.55), rgba(30,64,175,0.55)), url('../assets/images/Hospital.webp');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
     color: white;
     padding: 8rem 1.5rem;
     text-align: center;

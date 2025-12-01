@@ -1,0 +1,37 @@
+<header class="header">
+    <div class="header-content">
+        <div class="logo-section">
+            <img src="assets/images/logo.png" alt="Centro Médico" class="logo-img">
+            <div class="logo-text">
+                <h1>Centro Médico</h1>
+                <p>Especialidad en salud</p>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <button ng-click="navigateTo('views/inicio.html')" 
+                    ng-class="{'active': currentView === 'views/inicio.html'}">
+                Inicio
+            </button>
+            <button ng-click="navigateTo('views/nosotros.html')" 
+                    ng-class="{'active': currentView === 'views/nosotros.html'}">
+                Nosotros
+            </button>
+            <button ng-click="navigateTo('views/inicio.html', '#servicios-principales')" 
+                    ng-class="{'active': currentView === 'views/inicio.html'}">
+                Servicios
+            </button>
+            <button ng-click="navigateTo('views/blog.html')" 
+                    ng-class="{'active': currentView === 'views/blog.html'}">
+                Blog
+            </button>
+            <button ng-click="navigateTo('views/agendar.html')" 
+                    ng-class="{'active': currentView === 'views/agendar.html'}">
+                Agendar Citas
+            </button>
+            <button ng-click="navigateTo('views/contacto.html')" 
+                    ng-class="{'active': currentView === 'views/contacto.html'}">
+                Contacto
+            </button>
+        </nav>
+    </div>
+</header>

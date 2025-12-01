@@ -1,0 +1,67 @@
+<div ng-controller="InicioController" class="inicio-container">
+    
+    <!-- Banner Principal -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Nuestra especialidad eres tú</h1>
+            <p>Contamos con médicos especialistas para atender las necesidades médicas de toda tu familia</p>
+            <button class="btn-primary" ng-click="navigateToAgendar()">Agendar Cita</button>
+        </div>
+    </section>
+
+    <!-- Servicios Principales usando ng-repeat -->
+    <section class="servicios-principales">
+        <div class="container" id="servicios-principales">
+            <h2>Nuestros Servicios Principales</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card" ng-repeat="servicio in serviciosPrincipales">
+                    <div class="servicio-icon">{{servicio.icon}}</div>
+                    <h3>{{servicio.nombre}}</h3>
+                    <p>{{servicio.descripcion}}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabla de Especialidades con filtro -->
+    <section class="especialidades-section">
+        <div class="container" id="especialidades-medicas">
+            <h2>Especialidades Médicas</h2>
+            
+            <!-- Buscador usando ng-model -->
+            <div class="search-container">
+                <input type="text" 
+                       placeholder="Buscar especialidad, horario o precio..."
+                       ng-model="searchTerm"
+                       class="search-input">
+            </div>
+
+            <div class="table-container">
+                <table class="especialidades-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Servicio</th>
+                            <th>Disponibilidad</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- ng-repeat con filtro personalizado -->
+                        <tr ng-repeat="esp in especialidades | filter:searchTerm" 
+                            ng-class="{'even': $even}">
+                            <td>{{esp.id}}</td>
+                            <td class="servicio-name">{{esp.servicio}}</td>
+                            <td>{{esp.disponibilidad}}</td>
+                            <td class="precio">{{esp.precio | currency:'$'}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Mensaje cuando no hay resultados -->
+                <div ng-show="(especialidades | filter:searchTerm).length === 0" class="no-results">
+                    No se encontraron resultados
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

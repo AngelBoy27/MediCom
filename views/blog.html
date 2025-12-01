@@ -1,0 +1,35 @@
+﻿<div ng-controller="BlogController" class="blog-container">
+    <div class="container">
+        <div class="blog-header">
+            <h1 class="animate__animated animate__fadeInDown">Blog Médico</h1>
+            <p class="subtitle animate__animated animate__fadeInUp">Artículos y consejos de salud de nuestros especialistas</p>
+        </div>
+
+        <div class="blog-grid">
+            <article class="blog-card animate__animated animate__fadeInUp" ng-repeat="post in blogPosts" style="animation-delay: {{$index * 0.1}}s;">
+                <div class="blog-card-image">
+                    <img ng-src="{{post.imagen}}" alt="{{post.titulo}}" class="blog-image-img" />
+                    <div class="categoria-badge">{{post.categoria}}</div>
+                </div>
+                
+                <div class="blog-card-content">
+                    <div class="blog-meta">
+                        <span class="blog-fecha">{{post.fecha | date:'d MMMM, yyyy'}}</span>
+                        <span class="blog-autor">Por {{post.autor}}</span>
+                    </div>
+                    
+                    <h3 class="blog-title">{{post.titulo}}</h3>
+                    <p class="blog-excerpt">{{post.resumen}}</p>
+                    
+                    <a href="javascript:void(0)" class="btn-leer-mas">
+                        Leer más <span class="arrow"></span>
+                    </a>
+                </div>
+            </article>
+        </div>
+
+        <div class="no-posts" ng-if="(blogPosts | filter:filtroCategoria ? {categoria: filtroCategoria} : '').length === 0">
+            <p>No hay artículos disponibles en esta categoría</p>
+        </div>
+    </div>
+</div>

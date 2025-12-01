@@ -1,0 +1,103 @@
+.servicios-container {
+    padding: 4rem 1.5rem;
+    min-height: 70vh;
+}
+
+.servicios-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #1f2937;
+}
+
+.servicios-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 4rem 0 2rem;
+    color: #1f2937;
+}
+
+.servicios-principales-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.servicio-principal-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s;
+}
+
+.servicio-principal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.servicio-header {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.servicio-icon-large {
+    font-size: 3.5rem;
+    min-width: 80px;
+}
+
+.servicio-principal-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #1f2937;
+}
+
+.servicio-principal-card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.especialidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.especialidad-card {
+    background: linear-gradient(135deg, #eff6ff 0%, white 100%);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #bfdbfe;
+    transition: all 0.3s;
+}
+
+.especialidad-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.especialidad-card h4 {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+    color: #1f2937;
+}
+
+.especialidad-card .horario {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.especialidad-card .precio {
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+@media (max-width: 768px) {
+    .servicios-principales-grid {
+        grid-template-columns: 1fr;
+    }
+}

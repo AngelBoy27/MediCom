@@ -1,0 +1,77 @@
+<div ng-controller="AgendarController" class="agendar-container">
+    <div class="container">
+        <h1>Agendar Cita</h1>
+        <div class="form-card">
+            
+            <!-- Formulario usando ng-model -->
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Nombre Completo *</label>
+                    <input type="text" 
+                           ng-model="formData.nombre"
+                           placeholder="Juan Pérez"
+                           required>
+                </div>
+                <div class="form-group">
+                    <label>Email *</label>
+                    <input type="email" 
+                           ng-model="formData.email"
+                           placeholder="correo@ejemplo.com"
+                           required>
+                </div>
+            </div>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Teléfono *</label>
+                    <input type="tel" 
+                           ng-model="formData.telefono"
+                           placeholder="5512345678"
+                           required>
+                </div>
+                <div class="form-group">
+                    <label>Servicio *</label>
+                    <!-- Select usando ng-options -->
+                    <select ng-model="formData.servicio"
+                            ng-options="esp for esp in especialidadesLista"
+                            required>
+                        <option value="">Seleccionar servicio</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Fecha *</label>
+                    <input type="date" 
+                           ng-model="formData.fecha"
+                           required>
+                </div>
+                <div class="form-group">
+                    <label>Hora *</label>
+                    <input type="time" 
+                           ng-model="formData.hora"
+                           required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Mensaje adicional</label>
+                <textarea ng-model="formData.mensaje"
+                          rows="4"
+                          placeholder="Describa brevemente el motivo de su consulta..."></textarea>
+            </div>
+
+            <button class="btn-submit" 
+                    ng-click="agendarCita()"
+                    ng-disabled="!isFormValid()">
+                Agendar Cita
+            </button>
+
+            <!-- Mensaje de confirmación -->
+            <div ng-show="mensajeConfirmacion" class="mensaje-exito">
+                {{mensajeConfirmacion}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+/*
+[
+    {
+        "id": 1,
+        "servicio": "Neurología",
+        "disponibilidad": "Lun-Vie 9:00-18:00",
+        "precio": 800
+    },
+    {
+        "id": 2,
+        "servicio": "Traumatología y Ortopedia",
+        "disponibilidad": "Lun-Sáb 8:00-20:00",
+        "precio": 750
+    },
+    {
+        "id": 3,
+        "servicio": "Cardiología",
+        "disponibilidad": "Lun-Vie 10:00-19:00",
+        "precio": 900
+    },
+    {
+        "id": 4,
+        "servicio": "Pediatría",
+        "disponibilidad": "Lun-Sáb 8:00-18:00",
+        "precio": 650
+    },
+    {
+        "id": 5,
+        "servicio": "Nutrición",
+        "disponibilidad": "Lun-Vie 9:00-17:00",
+        "precio": 550
+    },
+    {
+        "id": 6,
+        "servicio": "Cirugía Maxilofacial",
+        "disponibilidad": "Mar-Jue 10:00-16:00",
+        "precio": 1200
+    },
+    {
+        "id": 7,
+        "servicio": "Cirugía Plástica",
+        "disponibilidad": "Lun-Vie 11:00-17:00",
+        "precio": 1500
+    },
+    {
+        "id": 8,
+        "servicio": "Psiquiatría",
+        "disponibilidad": "Lun-Vie 9:00-19:00",
+        "precio": 850
+    }
+]
+*/

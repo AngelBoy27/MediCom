@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9fafb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+input, select, textarea {
+    font-family: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Utilidades */
+.highlighted {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.mensaje-exito {
+    background-color: #d1fae5;
+    color: #065f46;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 600;
+}

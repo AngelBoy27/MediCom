@@ -1,0 +1,66 @@
+.header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.logo-text h1 {
+    font-size: 1.25rem;
+    color: #1f2937;
+    margin-bottom: 0.125rem;
+}
+
+.logo-text p {
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-menu button {
+    background: none;
+    border: none;
+    color: #6b7280;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    transition: color 0.3s;
+    font-size: 1rem;
+}
+
+.nav-menu button:hover,
+.nav-menu button.active {
+    color: #2563eb;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+}

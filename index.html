@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="centroMedicoApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Médico - Tu salud es nuestra prioridad</title>
+    
+    <!-- Animate.css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/servicios.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/agendar.css">
+    <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body ng-controller="MainController">
+    
+    <!-- Header usando ng-include -->
+    <div ng-include="'views/header.html'"></div>
+    
+    <!-- Contenido principal dinámico -->
+    <main>
+        <div ng-include="currentView"></div>
+    </main>
+    
+    <!-- Footer usando ng-include -->
+    <div ng-include="'views/footer.html'"></div>
+    
+    <!-- AngularJS CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    
+    <!-- App y Controladores -->
+    <script src="js/app.js"></script>
+    <script src="js/controllers/MainController.js"></script>
+    <script src="js/controllers/InicioController.js"></script>
+    <script src="js/controllers/ServiciosController.js"></script>
+    <script src="js/controllers/NosotrosController.js"></script>
+    <script src="js/controllers/BlogController.js"></script>
+    <script src="js/controllers/AgendarController.js"></script>
+    <script src="js/controllers/ContactoController.js"></script>
+    
+    <!-- Servicios y Filtros -->
+    <script src="js/services/DataService.js"></script>
+    <script src="js/filters/customFilters.js"></script>
+    
+</body>
+</html>

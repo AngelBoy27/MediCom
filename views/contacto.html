@@ -1,0 +1,86 @@
+<div ng-controller="ContactoController" class="contacto-container">
+    <div class="container">
+        <h1 class="animate__animated animate__fadeInDown">Contacto</h1>
+
+        <div class="contacto-grid">
+            <!-- Formulario de contacto -->
+            <div class="contact-form info-card animate__animated animate__fadeInLeft">
+                <h2>Envíanos un mensaje</h2>
+
+                <form name="contactForm" novalidate ng-submit="enviarContacto()">
+                    <div class="form-row">
+                        <input type="text" name="nombre" ng-model="formContacto.nombre" placeholder="Nombre completo" required />
+                    </div>
+
+                    <div class="form-row">
+                        <input type="email" name="email" ng-model="formContacto.email" placeholder="Correo electrónico" required />
+                    </div>
+
+                    <div class="form-row">
+                        <input type="tel" name="telefono" ng-model="formContacto.telefono" placeholder="Teléfono (opcional)" />
+                    </div>
+
+                    <div class="form-row">
+                        <textarea name="mensaje" ng-model="formContacto.mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Enviar mensaje</button>
+                        <span class="form-note">Te responderemos a la brevedad.</span>
+                    </div>
+                </form>
+
+                <div class="alert success" ng-show="contactSuccess">
+                    Mensaje enviado correctamente. Gracias por contactarnos.
+                </div>
+            </div>
+
+            <!-- Información y mapa -->
+            <div class="contact-info">
+                <div class="info-card animate__animated animate__fadeInRight">
+                    <h2>Información</h2>
+
+                    <div class="info-section">
+                        <div class="info-icon">📍</div>
+                        <div class="info-content">
+                            <div class="info-title">Dirección</div>
+                            <p ng-bind="contactInfo.direccion"></p>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <div class="info-icon">📞</div>
+                        <div class="info-content">
+                            <div class="info-title">Teléfonos</div>
+                            <p ng-repeat="t in contactInfo.telefonos" ng-bind="t"></p>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <div class="info-icon">✉️</div>
+                        <div class="info-content">
+                            <div class="info-title">Correo</div>
+                            <p ng-repeat="e in contactInfo.emails" ng-bind="e"></p>
+                        </div>
+                    </div>
+
+                    <div class="info-section">
+                        <div class="info-icon">⏰</div>
+                        <div class="info-content">
+                            <div class="info-title">Horarios</div>
+                            <p ng-repeat="h in contactInfo.horarios" ng-bind="h"></p>
+                        </div>
+                    </div>
+
+                    <div class="socials">
+                        <a href="#" class="social">Facebook</a>
+                        <a href="#" class="social">Twitter</a>
+                        <a href="#" class="social">Instagram</a>
+                    </div>
+                </div>
+
+                <!-- Map eliminado: no se dispone de ubicación embed -->
+            </div>
+        </div>
+    </div>
+</div>

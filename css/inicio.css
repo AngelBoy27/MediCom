@@ -1,0 +1,190 @@
+.inicio-container {
+    width: 100%;
+}
+
+.banner {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    color: white;
+    padding: 5rem 1.5rem;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.banner-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary {
+    background-color: white;
+    color: #2563eb;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #f3f4f6;
+    transform: translateY(-2px);
+}
+
+.servicios-principales {
+    padding: 4rem 1.5rem;
+}
+
+.servicios-principales h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #1f2937;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.servicio-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+    border: 1px solid #e5e7eb;
+}
+
+.servicio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.servicio-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.servicio-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #1f2937;
+}
+
+.servicio-card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.especialidades-section {
+    background-color: #f9fafb;
+    padding: 4rem 1.5rem;
+}
+
+.especialidades-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #1f2937;
+}
+
+.search-container {
+    max-width: 500px;
+    margin: 0 auto 2rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.table-container {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.especialidades-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.especialidades-table thead {
+    background-color: #2563eb;
+    color: white;
+}
+
+.especialidades-table th,
+.especialidades-table td {
+    padding: 1rem 1.5rem;
+    text-align: left;
+}
+
+.especialidades-table tbody tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.especialidades-table tbody tr.even {
+    background-color: #f9fafb;
+}
+
+.especialidades-table tbody tr:hover {
+    background-color: #f3f4f6;
+}
+
+.servicio-name {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.precio {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.no-results {
+    padding: 2rem;
+    text-align: center;
+    color: #6b7280;
+}
+
+@media (max-width: 768px) {
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+    
+    .banner-content p {
+        font-size: 1.125rem;
+    }
+    
+    .servicios-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .table-container {
+        overflow-x: auto;
+    }
+}

@@ -1,0 +1,56 @@
+﻿[
+    {
+        "id": 1,
+        "titulo": "Importancia de los chequeos medicos anuales",
+        "fecha": "2025-11-15T00:00:00.000Z",
+        "resumen": "Descubre por que es fundamental realizarte un chequeo medico completo una vez al ano para prevenir enfermedades y mantener tu salud optima.",
+        "categoria": "Prevencion",
+        "imagen": "assets/images/sala1.jpg",
+        "autor": "Dr. Juan Perez"
+    },
+    {
+        "id": 2,
+        "titulo": "Consejos para una vida saludable",
+        "fecha": "2025-11-10T00:00:00.000Z",
+        "resumen": "Tips practicos para mantener un estilo de vida saludable: alimentacion balanceada, ejercicio regular y descanso adecuado.",
+        "categoria": "Bienestar",
+        "imagen": "assets/images/paciente-medico.jpg",
+        "autor": "Dra. Maria Gonzalez"
+    },
+    {
+        "id": 3,
+        "titulo": "Avances en tratamientos cardiologicos",
+        "fecha": "2025-11-05T00:00:00.000Z",
+        "resumen": "Conoce las ultimas innovaciones en el tratamiento de enfermedades cardiovasculares y como pueden mejorar tu calidad de vida.",
+        "categoria": "Cardiologia",
+        "imagen": "assets/images/sala2.jpg",
+        "autor": "Dr. Carlos Ramirez"
+    },
+    {
+        "id": 4,
+        "titulo": "Nutricion para diferentes etapas de la vida",
+        "fecha": "2025-11-01T00:00:00.000Z",
+        "resumen": "Guia completa sobre las necesidades nutricionales desde la infancia hasta la tercera edad.",
+        "categoria": "Nutricion",
+        "imagen": "assets/images/sala3.jpg",
+        "autor": "Lic. Ana Martinez"
+    },
+    {
+        "id": 5,
+        "titulo": "Salud mental: romper el estigma",
+        "fecha": "2025-10-28T00:00:00.000Z",
+        "resumen": "La importancia de cuidar nuestra salud mental y buscar ayuda profesional cuando sea necesario.",
+        "categoria": "Salud Mental",
+        "imagen": "assets/images/personal.jpg",
+        "autor": "Dr. Roberto Lopez"
+    },
+    {
+        "id": 6,
+        "titulo": "Pediatria: vacunacion infantil",
+        "fecha": "2025-10-25T00:00:00.000Z",
+        "resumen": "Todo lo que necesitas saber sobre el esquema de vacunacion para proteger a tus hijos.",
+        "categoria": "Pediatria",
+        "imagen": "assets/images/sala4.jpg",
+        "autor": "Dra. Laura Sanchez"
+    }
+]

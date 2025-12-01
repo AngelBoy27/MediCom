@@ -1,0 +1,52 @@
+/*
+[
+    {
+        "nombre": "Neurología",
+        "horario": "Lun-Vie 9:00-18:00",
+        "precio": 800,
+        "descripcion": "Diagnóstico y tratamiento de enfermedades del sistema nervioso"
+    },
+    {
+        "nombre": "Traumatología y Ortopedia",
+        "horario": "Lun-Sáb 8:00-20:00",
+        "precio": 750,
+        "descripcion": "Atención especializada en lesiones músculo-esqueléticas"
+    },
+    {
+        "nombre": "Cardiología",
+        "horario": "Lun-Vie 10:00-19:00",
+        "precio": 900,
+        "descripcion": "Cuidado integral del corazón y sistema cardiovascular"
+    },
+    {
+        "nombre": "Pediatría",
+        "horario": "Lun-Sáb 8:00-18:00",
+        "precio": 650,
+        "descripcion": "Atención médica especializada para niños y adolescentes"
+    },
+    {
+        "nombre": "Nutrición",
+        "horario": "Lun-Vie 9:00-17:00",
+        "precio": 550,
+        "descripcion": "Planes alimenticios personalizados para tu salud"
+    },
+    {
+        "nombre": "Cirugía Maxilofacial",
+        "horario": "Mar-Jue 10:00-16:00",
+        "precio": 1200,
+        "descripcion": "Cirugía reconstructiva y estética facial"
+    },
+    {
+        "nombre": "Cirugía Plástica",
+        "horario": "Lun-Vie 11:00-17:00",
+        "precio": 1500,
+        "descripcion": "Procedimientos estéticos y reconstructivos"
+    },
+    {
+        "nombre": "Psiquiatría",
+        "horario": "Lun-Vie 9:00-19:00",
+        "precio": 850,
+        "descripcion": "Atención profesional en salud mental"
+    }
+]
+*/

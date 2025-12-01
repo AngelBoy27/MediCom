@@ -1,0 +1,262 @@
+.nosotros-container {
+    padding: 4rem 1.5rem;
+    min-height: 70vh;
+}
+
+.nosotros-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #1f2937;
+    text-align: center;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.text-content h2 {
+    font-size: 1.875rem;
+    color: #2563eb;
+    margin-bottom: 1.5rem;
+}
+
+.text-content p {
+    color: #6b7280;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.image-placeholder {
+    background-color: #e5e7eb;
+    height: 300px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Galería de Imágenes - Mosaico Masónico */
+.gallery-section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.gallery-section h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.gallery-grid.masonry {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    auto-rows: 200px;
+}
+
+.masonry-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #f8fafc;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.masonry-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.masonry-item.tall {
+    grid-row: span 2;
+}
+
+.masonry-item.wide {
+    grid-column: span 2;
+}
+
+.masonry-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    padding: 1.5rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.masonry-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.masonry-item:hover img {
+    transform: scale(1.08);
+}
+
+.masonry-item:hover .overlay {
+    opacity: 1;
+}
+
+/* Estadísticas */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.15);
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+}
+
+.stat-card h3 {
+    font-size: 2.5rem;
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.stat-card p {
+    color: #374151;
+    font-size: 1rem;
+}
+
+/* Sección de Misión */
+.mission-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.mission-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #2563eb;
+    transition: all 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.12);
+}
+
+.mission-card h3 {
+    font-size: 1.5rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.mission-card p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* Contenedor */
+.nosotros-container .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+    .gallery-grid.masonry {
+        grid-template-columns: repeat(3, 1fr);
+        auto-rows: 180px;
+    }
+
+    .masonry-item.wide {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-grid,
+    .mission-section {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid.masonry {
+        grid-template-columns: repeat(2, 1fr);
+        auto-rows: 150px;
+        gap: 1rem;
+    }
+
+    .masonry-item.tall,
+    .masonry-item.wide {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .image-placeholder {
+        height: 220px;
+    }
+
+    .nosotros-container h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid.masonry {
+        grid-template-columns: 1fr;
+        auto-rows: 120px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mission-section {
+        grid-template-columns: 1fr;
+    }
+
+    .nosotros-container {
+        padding: 2rem 1rem;
+    }
+
+    .nosotros-container h1 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}

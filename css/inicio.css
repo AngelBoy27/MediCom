@@ -4,7 +4,8 @@
 
 .banner {
     /* Fondo con imagen del hospital y overlay para legibilidad */
-    background-image: linear-gradient(rgba(37,99,235,0.55), rgba(30,64,175,0.55)), url('../assets/images/Hospital.webp');
+    /* Usar la imagen actualizada del hospital */
+    background-image: linear-gradient(rgba(37,99,235,0.55), rgba(30,64,175,0.55)), url('../assets/images/Hospital.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

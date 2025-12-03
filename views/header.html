@@ -13,28 +13,28 @@
             <span></span>
         </button>
         <nav class="nav-menu" ng-class="{'open': menuOpen}">
-            <button ng-click="navigateTo('views/inicio.html')" 
-                    ng-class="{'active': currentView === 'views/inicio.html'}">
+            <button ng-click="navigateTo('/inicio')" 
+                    ng-class="{'active': isActive('/inicio')}">
                 Inicio
             </button>
-            <button ng-click="navigateTo('views/nosotros.html')" 
-                    ng-class="{'active': currentView === 'views/nosotros.html'}">
+            <button ng-click="navigateTo('/nosotros')" 
+                    ng-class="{'active': isActive('/nosotros')}">
                 Nosotros
             </button>
-            <button ng-click="navigateTo('views/servicios.html')" 
-                    ng-class="{'active': currentView === 'views/servicios.html'}">
+            <button ng-click="navigateTo('/servicios')" 
+                    ng-class="{'active': isActive('/servicios')}">
                 Servicios
             </button>
-            <button ng-click="navigateTo('views/blog.html')" 
-                    ng-class="{'active': currentView === 'views/blog.html'}">
+            <button ng-click="navigateTo('/blog')" 
+                    ng-class="{'active': isActive('/blog')}">
                 Blog
             </button>
-            <button ng-click="navigateTo('views/agendar.html')" 
-                    ng-class="{'active': currentView === 'views/agendar.html'}">
+            <button ng-click="navigateTo('/agendar')" 
+                    ng-class="{'active': isActive('/agendar')}">
                 Agendar Citas
             </button>
-            <button ng-click="navigateTo('views/contacto.html')" 
-                    ng-class="{'active': currentView === 'views/contacto.html'}">
+            <button ng-click="navigateTo('/contacto')" 
+                    ng-class="{'active': isActive('/contacto')}">
                 Contacto
             </button>
         </nav>

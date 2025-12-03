@@ -1,7 +1,4 @@
-app.controller('MainController', function($scope) {
-    // Vista inicial que se muestra al cargar la página
-    $scope.currentView = 'views/inicio.html';
-    
+app.controller('MainController', function($scope, $location) {
     // Estado del menú móvil
     $scope.menuOpen = false;
     
@@ -10,24 +7,25 @@ app.controller('MainController', function($scope) {
         $scope.menuOpen = !$scope.menuOpen;
     };
     
-    // Función para cambiar entre páginas/vistas
-    $scope.navigateTo = function(view, scrollTo) {
-        $scope.currentView = view;
+    // Función para cambiar entre páginas/vistas usando $location
+    $scope.navigateTo = function(path) {
+        $location.path(path);
         // Cerrar menú móvil al navegar
         $scope.menuOpen = false;
         // Scroll hacia arriba al cambiar de página
         window.scrollTo(0, 0);
-        
-        // Si se especifica un elemento para desplazarse, esperar a que la vista se cargue
-        if (scrollTo) {
-            setTimeout(function() {
-                var elemento = document.querySelector(scrollTo);
-                if (elemento) {
-                    elemento.scrollIntoView({ behavior: 'smooth' });
-                }
-            }, 100);
-        }
     };
+    
+    // Detectar ruta actual para marcar botones como activos
+    $scope.isActive = function(path) {
+        return $location.path() === path;
+    };
+    
+    // Monitorear cambios en la ruta
+    $scope.$on('$routeChangeSuccess', function() {
+        // Scroll al top cuando se cambia de vista
+        window.scrollTo(0, 0);
+    });
     
     console.log('MainController cargado');
 });

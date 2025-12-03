@@ -19,13 +19,12 @@
 }
 
 .servicios-principales-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
     margin-bottom: 3rem;
-    justify-items: center;
     width: 100%;
-    place-content: center;
 }
 
 .servicio-principal-card {
@@ -36,6 +35,7 @@
     border: 1px solid #e5e7eb;
     transition: all 0.3s;
     width: 100%;
+    flex: 0 1 320px;
     max-width: 400px;
 }
 
@@ -108,7 +108,12 @@
     }
     
     .servicios-principales-grid {
-        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+    .servicio-principal-card {
+        flex: 0 1 45%;
+        max-width: 480px;
     }
 }
 
@@ -128,8 +133,13 @@
     }
     
     .servicios-principales-grid {
-        grid-template-columns: 1fr;
         gap: 1.5rem;
+        justify-content: center;
+    }
+
+    .servicio-principal-card {
+        flex: 0 1 100%;
+        max-width: 720px;
     }
     
     .especialidades-grid {

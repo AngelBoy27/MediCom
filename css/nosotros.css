@@ -63,7 +63,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
-    auto-rows: 200px;
+    auto-rows: 220px;
 }
 
 .masonry-item {
@@ -85,11 +85,11 @@
 }
 
 .masonry-item.tall {
-    grid-row: span 2;
+    grid-row: span 1;
 }
 
 .masonry-item.wide {
-    grid-column: span 2;
+    grid-column: span 1;
 }
 
 .masonry-item .overlay {
@@ -202,11 +202,15 @@
     
     .gallery-grid.masonry {
         grid-template-columns: repeat(3, 1fr);
-        auto-rows: 180px;
+        auto-rows: 200px;
     }
 
     .masonry-item.wide {
         grid-column: span 1;
+    }
+    
+    .masonry-item.tall {
+        grid-row: span 1;
     }
 }
 

@@ -26,7 +26,7 @@
     
     <!-- Contenido principal dinámico -->
     <main>
-        <div ng-include="currentView"></div>
+        <ng-view></ng-view>
     </main>
     
     <!-- Footer usando ng-include -->
@@ -34,6 +34,7 @@
     
     <!-- AngularJS CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
     
     <!-- App y Controladores -->
     <script src="js/app.js"></script>

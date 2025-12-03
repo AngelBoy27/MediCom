@@ -5,7 +5,7 @@
         "fecha": "2025-11-15T00:00:00.000Z",
         "resumen": "Descubre por que es fundamental realizarte un chequeo medico completo una vez al ano para prevenir enfermedades y mantener tu salud optima.",
         "categoria": "Prevencion",
-        "imagen": "assets/images/sala1.jpg",
+        "imagen": "assets/images/prevencion.jpg",
         "autor": "Dr. Juan Perez"
     },
     {
@@ -14,7 +14,7 @@
         "fecha": "2025-11-10T00:00:00.000Z",
         "resumen": "Tips practicos para mantener un estilo de vida saludable: alimentacion balanceada, ejercicio regular y descanso adecuado.",
         "categoria": "Bienestar",
-        "imagen": "assets/images/paciente-medico.jpg",
+        "imagen": "assets/images/bienestar.jpg",
         "autor": "Dra. Maria Gonzalez"
     },
     {
@@ -23,7 +23,7 @@
         "fecha": "2025-11-05T00:00:00.000Z",
         "resumen": "Conoce las ultimas innovaciones en el tratamiento de enfermedades cardiovasculares y como pueden mejorar tu calidad de vida.",
         "categoria": "Cardiologia",
-        "imagen": "assets/images/sala2.jpg",
+        "imagen": "assets/images/cardiologia.jpg",
         "autor": "Dr. Carlos Ramirez"
     },
     {
@@ -32,7 +32,7 @@
         "fecha": "2025-11-01T00:00:00.000Z",
         "resumen": "Guia completa sobre las necesidades nutricionales desde la infancia hasta la tercera edad.",
         "categoria": "Nutricion",
-        "imagen": "assets/images/sala3.jpg",
+        "imagen": "assets/images/nutricion.jpg",
         "autor": "Lic. Ana Martinez"
     },
     {
@@ -41,7 +41,7 @@
         "fecha": "2025-10-28T00:00:00.000Z",
         "resumen": "La importancia de cuidar nuestra salud mental y buscar ayuda profesional cuando sea necesario.",
         "categoria": "Salud Mental",
-        "imagen": "assets/images/personal.jpg",
+        "imagen": "assets/images/salud-mental.jpg",
         "autor": "Dr. Roberto Lopez"
     },
     {
@@ -50,7 +50,7 @@
         "fecha": "2025-10-25T00:00:00.000Z",
         "resumen": "Todo lo que necesitas saber sobre el esquema de vacunacion para proteger a tus hijos.",
         "categoria": "Pediatria",
-        "imagen": "assets/images/sala4.jpg",
+        "imagen": "assets/images/pediatria.jpg",
         "autor": "Dra. Laura Sanchez"
     }
 ]
